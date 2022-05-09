@@ -1,7 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-body{
+*{
 
+margin: 0;
+
+}
+body{
 height: 100vh;
 margin: 0%;
 background-image: linear-gradient(to bottom, hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+font-family: 'Kumbh Sans', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+main{
+    display: flex;
+    height: 500px;
+    width: 900px;
+    background-color: white;
+    border-radius: 18px;
+    position: relative;
+    
+}
+
+.left{
+width: 50%;
+height: 100%;
+background-image: url(./images/bg-pattern-desktop.svg);
+background-position-x: 115%;
+background-position-y: 67%;
+background-size: 950px;
+background-repeat: no-repeat;
+border: 1px solid black;
+position: relative;
+overflow: hidden;
+}
+.right{
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.woman{
+
+position: absolute;
+top: 15%;
+left: -20%;
+}
+.box{
+
+position: absolute;
+left: -92px;
+top: 210px;
+z-index: 1;
+display: flex;
+
+}
+.faq{
+
+height: 80%;
+width: 90%;
+}
+h1{
+margin-top: 10px;
+}
+.question{
+
+display: flex;
+padding-bottom: 15px;
+
+justify-content: space-between;
+align-items: center;
+}
+.answer{
+border-bottom: 1px solid rgb(211, 210, 210);
+margin-top: 15px;
+
+}
+#arrow{
+height: 10px;
+width: 12px;
+transform: rotate(0deg);
+}
+p{
+font-size: 14px;
+}
+.span{
+display: none;
+font-size: 12px;
+color: hsl(240, 6%, 50%);
+width: 300px;
+line-height: 16px;
+}
+.spanActive{
+display: inline-block;
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
+    width: 300px;
+    line-height: 16px;
+    margin-bottom: 15px;
+
+
 }
